@@ -1,74 +1,71 @@
-## FrappeJS CLI  
-
-> A Command Line Interface for quickly building apps with [FrappeJS](https://frappe.io/frappejs).
-
-<p align="middle">
-    <img src="https://github.com/frappe/frappejs-cli/blob/master/img/new-app.gif" width="430" height="310"/>
-    <img src="https://github.com/frappe/frappejs-cli/blob/master/img/start-electron.gif" width="430" height="310"/>
+<p align="center">
+cli_js is a powerful Command Line Interface designed to streamline the process of building and managing EmpressJS applications. It is tailored to simplify app creation, model definition, and application serving in development mode, as well as building applications for deployment.
+<br />
+<a href="https://empress.eco/">Explore the Docs</a> |
+<a href="https://github.com/empress-eco/cli_js/issues">Report Bugs</a> |
+<a href="https://github.com/empress-eco/cli_js/issues">Request Features</a> |
+<a href="https://github.com/empress-eco/cli_js">Support</a>
 </p>
 
-### Installation 
+## About cli_js
 
-    npm i -g https://github.com/frappe/frappejs-cli  
-      
-### Usage
+### Overview
+cli_js is designed with developers in mind, offering predefined templates for rapid app creation, easy model generation and seamless app serving with auto-reload capabilities. Whether you're working in a browser or Electron, cli_js has got you covered. 
 
- - [Create new app](#newApp)
- - [Create new model](#newModel)
- - [Serve application](#serve)
- - [Build application](#build)
+### Key Features
+- Rapid app creation with predefined templates
+- Easy model generation
+- Seamless app serving in Browser and Electron with auto-reload capability 
+- Application build feature (under development)
 
----
-<a id="newApp"></a>
-#### Create new app
+## Getting Started with cli_js
 
-Create a new FrappeJS application 
+### Prerequisites
+Before getting started, ensure that Node.js and NPM are installed in your development environment.
 
-##### Step 1:
-    frappe create-app app-name
+### Installation
+To install cli_js globally using NPM, use the following command:
 
-##### Step 2:
-Choose any of the following boilerplate for your new app:
+```sh
+npm i -g https://github.com/empress-eco/cli_js.git
+```
 
- 1. Blank ( Blank Frontend + Server )
- 2. VueJS ( Vue.js Frontend + Server + SQLite Database )
- 3. Server ( No Frontend + Server )
+## Usage
 
-#####  Step 3:
-Choose a target platform for your new app:
+cli_js offers a variety of commands for easy app management. Here's a quick start guide:
 
- 1. Web
- 2. Electron
+1. **Create a new app:** Use the command `Empress create-app app-name`, then follow the prompts to select a boilerplate, target platform, and package manager.
 
-##### Step 4:
-Choose a node package manager to install dependencies or skip to install dependencies later:
+```sh
+Empress create-app app-name
+```
 
- 1. NPM
- 2. Yarn
- 3. Skip this step
+2. **Create a new model:** Use the command `Empress create-model model-name` and provide the model details as prompted.
 
----
-<a id="newModel"></a>
-#### Create new model
-Create a new FrappeJS model
+```sh
+Empress create-model model-name
+```
 
-    frappe create-model model-name
-Enter the model details as prompted. [Click here](https://frappe.io/frappejs/docs/models.md) to know more about models in FrappeJS.
+3. **Serve your application:** Use the `Empress start` command to serve your app in the browser or `Empress start electron` to serve your app in Electron.
 
----
-<a id="serve"></a>
-#### Serve application
-Serve your application in development mode either in Browser (Web) or Electron with auto-reload capabillity.
+```sh
+Empress start 
+Empress start electron
+```
 
-To serve in Browser
+## Contribution Guidelines
+We warmly welcome contributions from the developer community! To contribute, follow these steps:
 
-    frappe start 
-    
-To serve in Electron
+- Fork the Project
+- Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+- Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+- Push to the Branch (`git push origin feature/AmazingFeature`)
+- Open a Pull Request
 
-    frappe start electron
+Your contributions will help make cli_js an even more powerful tool for EmpressJS app development!
 
----
-<a id="build"></a>
-#### Build application
-This feature is under development.
+## License and Acknowledgements
+
+This project is under the MIT License. Your contributions are also licensed under the MIT License.
+
+We extend our heartfelt thanks to the Empress Community, whose pioneering work and ongoing support have been instrumental in powering this project. We appreciate their dedication and innovation in creating the essential tools we rely on.
